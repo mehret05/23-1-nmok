@@ -5,9 +5,10 @@
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.475">
+  <meta name="generator" content="quarto-1.3.340">
 
   <meta name="author" content="Felix Dietrich">
   <title>What Constitutes Autonomy in Digital Communication?</title>
@@ -25,14 +26,15 @@
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
       width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
     }
-    .hanging div.csl-entry {
+    .hanging-indent div.csl-entry {
       margin-left:2em;
       text-indent:-2em;
     }
@@ -46,8 +48,7 @@
     }
     div.csl-indent {
       margin-left: 2em;
-    }
-  </style>
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -91,44 +92,44 @@
     font-weight: 400;
   }
 
-  .callout.callout-captioned.callout-style-simple .callout-body {
+  .callout.callout-titled.callout-style-simple .callout-body {
     margin-top: 0.2em;
   }
 
-  .callout:not(.callout-captioned) .callout-body {
+  .callout:not(.callout-titled) .callout-body {
       display: flex;
   }
 
-  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
     padding-left: 1.6em;
   }
 
-  .callout.callout-captioned .callout-header {
+  .callout.callout-titled .callout-header {
     padding-top: 0.2em;
     margin-bottom: -0.2em;
   }
 
-  .callout.callout-captioned .callout-caption  p {
+  .callout.callout-titled .callout-title  p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
     
-  .callout.callout-captioned.callout-style-simple .callout-content  p {
+  .callout.callout-titled.callout-style-simple .callout-content  p {
     margin-top: 0;
   }
 
-  .callout.callout-captioned.callout-style-default .callout-content  p {
+  .callout.callout-titled.callout-style-default .callout-content  p {
     margin-top: 0.7em;
   }
 
-  .callout.callout-style-simple div.callout-caption {
+  .callout.callout-style-simple div.callout-title {
     border-bottom: none;
     font-size: .9rem;
     font-weight: 600;
     opacity: 75%;
   }
 
-  .callout.callout-style-default  div.callout-caption {
+  .callout.callout-style-default  div.callout-title {
     border-bottom: none;
     font-weight: 600;
     opacity: 85%;
@@ -160,7 +161,7 @@
     background-size: 0.9rem 0.9rem;
   }
 
-  .callout-caption {
+  .callout-title {
     display: flex
   }
     
@@ -173,16 +174,16 @@
     display: none !important;
   }
 
-  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
     margin-bottom: 0.5rem;
   }
 
-  .callout.callout-captioned .callout-icon::before {
+  .callout.callout-titled .callout-icon::before {
     margin-top: .5rem;
     padding-right: .5rem;
   }
 
-  .callout:not(.callout-captioned) .callout-icon::before {
+  .callout:not(.callout-titled) .callout-icon::before {
     margin-top: 1rem;
     padding-right: .5rem;
   }
@@ -197,7 +198,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
   }
 
-  div.callout-note.callout-style-default .callout-caption {
+  div.callout-note.callout-style-default .callout-title {
     background-color: #dae6fb
   }
 
@@ -209,7 +210,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
   }
 
-  div.callout-important.callout-style-default .callout-caption {
+  div.callout-important.callout-style-default .callout-title {
     background-color: #f7dddc
   }
 
@@ -221,7 +222,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
   }
 
-  div.callout-warning.callout-style-default .callout-caption {
+  div.callout-warning.callout-style-default .callout-title {
     background-color: #fcefdc
   }
 
@@ -233,7 +234,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
   }
 
-  div.callout-tip.callout-style-default .callout-caption {
+  div.callout-tip.callout-style-default .callout-title {
     background-color: #ccf1e3
   }
 
@@ -245,7 +246,7 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
   }
 
-  div.callout-caution.callout-style-default .callout-caption {
+  div.callout-caution.callout-style-default .callout-title {
     background-color: #ffe5d0
   }
 
@@ -375,9 +376,9 @@ Felix Dietrich
 <h1>Session 01: Introduction</h1>
 
 <img data-src="https://i.pinimg.com/originals/1a/12/ef/1a12ef2a290201ea1dd7ac495dbaacc4.gif" class="r-stretch"><p><br></p>
-<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
-<div class="callout-caption">
+<div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -411,7 +412,7 @@ Felix Dietrich
 </ul>
 </div>
 <div class="fragment">
-<p><strong>Course material</strong></p>
+<p><strong>Course Material</strong></p>
 <ul>
 <li>Will be provided via the course website (and Moodle)</li>
 <li>Please check if you have access to the Moodle platform</li>
@@ -534,12 +535,14 @@ The Westworld Dilemma
 <section class="slide level2 center">
 
 <h3 id="what-will-i-do-1">What Will I Do?</h3>
+<div class="fragment">
 <p><strong>Exercises (not graded)</strong></p>
 <ul>
 <li>You will sometimes be provided with practical exercises</li>
 <li>These are intended to help you improve your competence with the learned topics</li>
 <li>Must be submitted until the following Sunday night after the live session via Moodle</li>
 </ul>
+</div>
 <div class="fragment">
 <p><strong>Wiki Entry (Individual Submission, not graded)</strong></p>
 <ul>
@@ -673,6 +676,224 @@ The Westworld Dilemma
 <li>Take a look at the table on pp.&nbsp;941-942. Do you understand what all of the described factors mean? If not, try to find out and write down what you have found. If you are still not sure, write this down as well and bring your questions to the next session.</li>
 </ul>
 </section></section>
+<section>
+<section id="session-02-the-mobile-connectivity-paradox-digital-wellbeing-as-a-dynamic-construct" class="title-slide slide level1 center">
+<h1>Session 02: The Mobile Connectivity Paradox — Digital Wellbeing as a Dynamic Construct</h1>
+<p><img data-src="https://imgs.xkcd.com/comics/isolation.png"><a href="https://xkcd.com/1601/" class="small-url">https://xkcd.com/1601/</a></p>
+<p><br></p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Resources for this session</strong></p>
+</div>
+<div class="callout-content">
+<p><span class="citation" data-cites="vandenabeeleDigitalWellbeingDynamic2021">Vanden Abeele (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="meierComputermediatedCommunicationSocial2021">Meier &amp; Reinecke (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="reineckePOPCWellbeingRisk2017">Reinecke (<a href="#/references" role="doc-biblioref" onclick="">2017</a>)</span>; <span class="citation" data-cites="reineckeSelfregulationKeyBoundary2022">Reinecke et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span>; <span class="citation" data-cites="schneiderHowWhenMobile2021">Schneider et al. (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></p>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<div class="big-text">
+<p>Any Questions about the Class?</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<div class="big-text">
+<p>Quiz Time</p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="is-social-media-bad-for-adolescents-mental-health">Is social media bad for (adolescents) mental health?</h3>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p><img data-src="img/02_mcparadox/wb1.png"></p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="img/02_mcparadox/wb2.png"></p>
+</div><div class="column" style="width:33%;">
+<p><img data-src="img/02_mcparadox/wb3.png"></p>
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<h3 id="what-is-digital-psychological-well-being">What is (digital) psychological well-being?</h3>
+
+<blockquote>
+<p>“Optimal psychological functioning and experience”</p>
+<p><span class="citation" data-cites="ryanHappinessHumanPotentials2001">Ryan &amp; Deci (<a href="#/references" role="doc-biblioref" onclick="">2001, p. 142</a>)</span></p>
+</blockquote>
+<div class="fragment">
+<div class="columns">
+<div class="column">
+<br>
+<center>
+<strong>Hedonia</strong>
+<hr>
+
+</center>
+<ul>
+<li>Focus on happiness and life satisfaction</li>
+<li>Pleasure attainment (positive affect)</li>
+<li>Pain avoidance (avoiding negative affect)</li>
+<li>Sometimes named subjective well-being</li>
+</ul>
+</div><div class="column">
+<br>
+<center>
+<strong>Eudaimonia</strong>
+<hr>
+
+</center>
+<ul>
+<li>Focus on full functioning</li>
+<li>Meaning</li>
+<li>Self-realization, self-actualization</li>
+</ul>
+</div>
+</div>
+</div>
+<p><br><br></p>
+<aside><div>
+<p>Ryan, R. M., &amp; Deci, E. L. (2001). On happiness and human potentials: A review of research on hedonic and eudaimonic well-being. <em>Annual Review of Psychology, 52</em>, 141–166. https://doi.org/10.1146/annurev.psych.52.1.141</p>
+</div></aside></section>
+<section class="slide level2 center">
+
+
+<h3 id="two-continua-models-of-mental-health">Two-continua models of mental health</h3>
+<p>in the context of computer-mediated communication, see <span class="citation" data-cites="meierComputermediatedCommunicationSocial2021">Meier &amp; Reinecke (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span></p>
+<p><img data-src="img/02_mcparadox/two_continua_mh.png" height="400"></p>
+<aside><div>
+<p>Meier, A., &amp; Reinecke, L. (2021). Computer-mediated communication, social media, and mental health: A conceptual and empirical meta-review. <em>Communication Research, 48</em>(8), 1182–1209. https://doi.org/10.1177/0093650220958224</p>
+</div></aside></section>
+<section class="slide level2 center">
+
+<h3 id="definition-of-digital-well-being">Definition of Digital Well-Being</h3>
+<blockquote>
+<p>“Digital wellbeing is a <strong>subjective individual experience</strong> of optimal balance between the benefits and drawbacks obtained from mobile connectivity. This experiential state is comprised of <strong>affective and cognitive appraisals</strong> of the integration of digital connectivity into ordinary life. People achieve digital wellbeing when experiencing maximal <strong>controlled pleasure and functional support</strong>, together with <strong>minimal loss of control and functional impairment.</strong>”</p>
+<p><span class="citation" data-cites="vandenabeeleDigitalWellbeingDynamic2021">Vanden Abeele (<a href="#/references" role="doc-biblioref" onclick="">2021, p. 938</a>)</span></p>
+</blockquote>
+
+<aside><div>
+<p>Vanden Abeele, M. M. P. (2021). Digital wellbeing as a dynamic construct. <em>Communication Theory, 31</em>(4), 932–955. https://doi.org/10.1093/ct/qtaa024</p>
+</div></aside></section>
+<section id="autonomy-need-experiences-as-a-central-mediator-between-media-use-and-well-being" class="slide level2 center">
+<h2>Autonomy Need Experiences as a Central Mediator between Media Use and Well-Being</h2>
+
+<img data-src="img/02_mcparadox/im3une.png" class="r-stretch quarto-figure-center"><p class="caption">Integrative Model of Mobile Media Use and Need Experiences (IM3UNE)</p></section>
+<section class="slide level2 center">
+
+<h3 id="what-are-demands">What are “Demands”?</h3>
+<p>Lack of theoretical integration of the role of technological influencing factors in digital media use</p>
+<ul>
+<li>Affordances? <span class="citation" data-cites="karahannaNeedsAffordancesFeatures2018">(<a href="#/references" role="doc-biblioref" onclick="">Karahanna et al., 2018</a>)</span></li>
+<li>CMC-Taxonomy? <span class="citation" data-cites="meierComputermediatedCommunicationSocial2021">(<a href="#/references" role="doc-biblioref" onclick="">Meier &amp; Reinecke, 2021</a>)</span></li>
+<li>“Cold” Affordances? <span class="citation" data-cites="trepteSocialMediaPrivacy2015">(<a href="#/references" role="doc-biblioref" onclick="">Trepte, 2015</a>)</span></li>
+<li>Machine Agency &amp; Human-AI Interaction? <span class="citation" data-cites="hancockAImediatedCommunicationDefinition2020 sundarRiseMachineAgency2020">(<a href="#/references" role="doc-biblioref" onclick="">Hancock et al., 2020</a>; <a href="#/references" role="doc-biblioref" onclick="">Sundar, 2020</a>)</span></li>
+</ul>
+<div class="fragment fade-in-then-out absolute" style="top: 0px; ">
+<p><img data-src="img/02_mcparadox/naf.png"></p>
+</div>
+<div class="fragment">
+
+</div>
+<div class="fragment fade-in-then-out absolute" style="top: 0px; ">
+<p><img data-src="img/02_mcparadox/cmc_taxonomy.png"></p>
+</div>
+<div class="fragment">
+<p>Many different terms, but <em>autonomy</em> still the (most) suitable term?</p>
+</div>
+<div class="fragment">
+<p><br><br> Let’s just take a look at what’s in the literature so far… <strong>→ Literature Review.</strong></p>
+</div>
+<p><br><br></p>
+
+
+
+
+
+<aside><div>
+<p>Hancock, J. T., Naaman, M., &amp; Levy, K. (2020). AI-mediated communication: Definition, research agenda, and ethical considerations. <em>Journal of Computer-Mediated Communication, 25</em>(1), 89–100. <a href="https://doi.org/10.1093/jcmc/zmz022" class="uri">https://doi.org/10.1093/jcmc/zmz022</a></p>
+</div><div>
+<p>Karahanna, E., Xin Xu, S., Xu, Y., &amp; Zhang, N. (2018). The needs–affordances–features perspective for the use of social media. <em>MIS Quarterly, 42</em>, 737–756. <a href="https://doi.org/10.25300/MISQ/2018/11492" class="uri">https://doi.org/10.25300/MISQ/2018/11492</a></p>
+</div><div>
+<p>Meier, A., &amp; Reinecke, L. (2021). Computer-mediated communication, social media, and mental health: A conceptual and empirical meta-review. <em>Communication Research, 48</em>(8), 1182–1209. <a href="https://doi.org/10.1177/0093650220958224" class="uri">https://doi.org/10.1177/0093650220958224</a></p>
+</div><div>
+<p>Sundar, S. S. (2020). Rise of machine agency: A framework for studying the psychology of human–AI interaction (HAII). <em>Journal of Computer-Mediated Communication, 25</em>(1), 74–88. <a href="https://doi.org/10.1093/jcmc/zmz026" class="uri">https://doi.org/10.1093/jcmc/zmz026</a></p>
+</div><div>
+<p>Trepte, S. (2015). Social media, privacy, and self-disclosure: The turbulence caused by social media’s affordances. <em>Social Media &amp; Society, 1</em>(1), 1–2. <a href="https://doi.org/10.1177/2056305115578681" class="uri">https://doi.org/10.1177/2056305115578681</a></p>
+</div></aside></section>
+<section class="slide level2 center">
+
+<h3 id="literature-review-of-digital-autonomy">Literature Review of Digital Autonomy</h3>
+<p><strong>Problem:</strong> Very broad construct, very much literature, how to narrow down?</p>
+<div class="fragment">
+<ul>
+<li>Citation Chasing?</li>
+<li>Autonomy <a href="https://www.wikidata.org/wiki/Q484105">“Concept”</a>?</li>
+<li>(Computational) Scoping Review</li>
+</ul>
+</div>
+<div class="fragment">
+<p><strong>Step 1: Gain an overview with the help of Topic Modeling…</strong></p>
+</div>
+</section>
+<section class="slide level2 center">
+
+<p><strong>What is Topic Modeling?</strong></p>
+<ul>
+<li>A corpus consists of <span class="math inline">\(D\)</span> documents und <span class="math inline">\(V\)</span> words (or terms): bag-of-words approach</li>
+<li>Assumption: there are latent clusters of topics <span class="math inline">\(K\)</span> which occur to varying degrees within <span class="math inline">\(D\)</span> and are indicated by specific words <span class="math inline">\(w\)</span> which belong to each <span class="math inline">\(K\)</span> with a specific probability</li>
+<li>Goal is the computation of two matrices: <span class="math inline">\(D*K\)</span> and <span class="math inline">\(V*K\)</span></li>
+</ul>
+<p>General Overview <span class="citation" data-cites="maierApplyingLDATopic2018">(<a href="#/references" role="doc-biblioref" onclick="">Maier et al., 2018, p. 94</a>)</span></p>
+<p><img data-src="img/02_mcparadox/top_mod.jpg" height="300"></p>
+<ul>
+<li><span class="math inline">\(\phi\)</span> = Word-topic assignment matrix</li>
+<li><span class="math inline">\(\theta\)</span> = Document-topic assignment matrix</li>
+</ul>
+</section>
+<section id="computational-scoping-review" class="slide level2 center">
+<h2>Computational Scoping Review</h2>
+
+<img data-src="img/02_mcparadox/tm.png" class="r-stretch quarto-figure-center"><p class="caption">Topic model (<em>k</em> = 14) with corresponding top words (i.e., highest β probability for topic) and most likely OpenAlex concepts (highest level and probability score). Relative topic prevalence γ over entire corpus (n = 1744). Topic labels in grey boxes based on qualitative assessment.</p></section>
+<section id="goals-and-research-questions" class="slide level2 center">
+<h2>Goals and Research Questions</h2>
+<p><strong>Goal 1: Integrating Human Computer Interaction and Communication Research</strong></p>
+<ul>
+<li><strong>RQ1</strong>: What are the <em>mechanisms</em> that are proposed to connect digital media use and autonomy need experiences?</li>
+</ul>
+<p><strong>Goal 2: Integrating Other Perspectives on Digital Autonomy</strong></p>
+<ul>
+<li><strong>RQ2</strong>: Which <em>research perspectives</em> can be identified in the study of digital autonomy?</li>
+<li><strong>RQ3</strong>: What are the <em>theoretical approaches</em> that are used by these perspectives and how do they relate to each other?</li>
+<li><strong>RQ4</strong>: Which of these perspectives focus on <em>individual perceptions</em> of digital autonomy or <em>autonomy need experiences</em> that relate to digital media use?</li>
+<li><strong>RQ5</strong>: How are individual perceptions of digital autonomy or autonomy need experiences that relate to digital media use <em>studied empirically</em>?</li>
+</ul>
+</section>
+<section class="slide level2 center">
+
+<div class="big-text">
+<p>Any Questions?</p>
+</div>
+</section>
+<section id="prepare-for-the-next-session-1" class="slide level2 center">
+<h2>Prepare for the next session</h2>
+<p>To prepare for the next session, please read the paper by <span class="citation" data-cites="vansteenkisteBasicPsychologicalNeeds2023">Vansteenkiste et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>.</p>
+<p><br><br></p>
+<p>After you have finished reading, try to answer the following questions:</p>
+<ul>
+<li>How can we define autonomy need experiences?</li>
+<li>How do the key criteria of BPNT described within the chapter relate to digital media use? What might be implications for studying digital autonomy?</li>
+<li>Can you think of examples that are similar to the empirical studies described in the chapter, but relate to digital media use?</li>
+<li>Did you find anything odd while reading the chapter? Can you identify aspects that might be worthy of critique?</li>
+</ul>
+</section></section>
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 
@@ -680,9 +901,42 @@ The Westworld Dilemma
 <img src="img/logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="doc-bibliography">
-<div id="ref-vandenabeeleDigitalWellbeingDynamic2021" class="csl-entry" role="doc-biblioentry">
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-hancockAImediatedCommunicationDefinition2020" class="csl-entry" role="listitem">
+Hancock, J. T., Naaman, M., &amp; Levy, K. (2020). <span class="nocase">AI-mediated</span> communication: Definition, research agenda, and ethical considerations. <em>Journal of Computer-Mediated Communication</em>, <em>25</em>(1), 89–100. <a href="https://doi.org/10.1093/jcmc/zmz022">https://doi.org/10.1093/jcmc/zmz022</a>
+</div>
+<div id="ref-karahannaNeedsAffordancesFeatures2018" class="csl-entry" role="listitem">
+Karahanna, E., Xin Xu, S., Xu, Y., &amp; Zhang, N. (2018). The needs–affordances–features perspective for the use of social media. <em>MIS Quarterly</em>, <em>42</em>, 737–756. <a href="https://doi.org/10.25300/MISQ/2018/11492">https://doi.org/10.25300/MISQ/2018/11492</a>
+</div>
+<div id="ref-maierApplyingLDATopic2018" class="csl-entry" role="listitem">
+Maier, D., Waldherr, A., Miltner, P., Wiedemann, G., Niekler, A., Keinert, A., Pfetsch, B., Heyer, G., Reber, U., Häussler, T., Schmid-Petri, H., &amp; Adam, S. (2018). Applying <span>LDA</span> topic modeling in communication research: Toward a valid and reliable methodology. <em>Communication Methods and Measures</em>, <em>12</em>(2-3), 93–118. <a href="https://doi.org/10.1080/19312458.2018.1430754">https://doi.org/10.1080/19312458.2018.1430754</a>
+</div>
+<div id="ref-meierComputermediatedCommunicationSocial2021" class="csl-entry" role="listitem">
+Meier, A., &amp; Reinecke, L. (2021). Computer-mediated communication, social media, and mental health: A conceptual and empirical meta-review. <em>Communication Research</em>, <em>48</em>(8), 1182–1209. <a href="https://doi.org/10.1177/0093650220958224">https://doi.org/10.1177/0093650220958224</a>
+</div>
+<div id="ref-reineckePOPCWellbeingRisk2017" class="csl-entry" role="listitem">
+Reinecke, L. (2017). <span>POPC</span> and well-being: <span>A</span> risk benefit analysis. In P. Vorderer, D. Hefner, L. Reinecke, &amp; C. Klimmt (Eds.), <em>Permanently <span>Online</span>, <span>Permanently Connected</span></em> (pp. 233–243). <span>Routledge</span>. <a href="https://doi.org/10.4324/9781315276472-22">https://doi.org/10.4324/9781315276472-22</a>
+</div>
+<div id="ref-reineckeSelfregulationKeyBoundary2022" class="csl-entry" role="listitem">
+Reinecke, L., Gilbert, A., &amp; Eden, A. (2022). Self-regulation as a key boundary condition in the relationship between social media use and well-being. <em>Current Opinion in Psychology</em>, <em>45</em>, 101296. <a href="https://doi.org/10.1016/j.copsyc.2021.12.008">https://doi.org/10.1016/j.copsyc.2021.12.008</a>
+</div>
+<div id="ref-ryanHappinessHumanPotentials2001" class="csl-entry" role="listitem">
+Ryan, R. M., &amp; Deci, E. L. (2001). On happiness and human potentials: A review of research on hedonic and eudaimonic well-being. <em>Annual Review of Psychology</em>, <em>52</em>, 141–166. <a href="https://doi.org/10.1146/annurev.psych.52.1.141">https://doi.org/10.1146/annurev.psych.52.1.141</a>
+</div>
+<div id="ref-schneiderHowWhenMobile2021" class="csl-entry" role="listitem">
+Schneider, F. M., Lutz, S., Halfmann, A., Meier, A., &amp; Reinecke, L. (2021). How and when do mobile media demands impact well-being? <span>Explicating</span> the <span>Integrative Model</span> of <span>Mobile Media Use</span> and <span>Need Experiences</span> (<span>IM3UNE</span>). <em>Mobile Media &amp; Communication</em>, 20501579211054928. <a href="https://doi.org/10.1177/20501579211054928">https://doi.org/10.1177/20501579211054928</a>
+</div>
+<div id="ref-sundarRiseMachineAgency2020" class="csl-entry" role="listitem">
+Sundar, S. S. (2020). Rise of machine agency: A framework for studying the psychology of human–<span>AI</span> interaction (<span>HAII</span>). <em>Journal of Computer-Mediated Communication</em>, <em>25</em>(1), 74–88. <a href="https://doi.org/10.1093/jcmc/zmz026">https://doi.org/10.1093/jcmc/zmz026</a>
+</div>
+<div id="ref-trepteSocialMediaPrivacy2015" class="csl-entry" role="listitem">
+Trepte, S. (2015). Social media, privacy, and self-disclosure: The turbulence caused by social media’s affordances. <em>Social Media &amp; Society</em>, <em>1</em>(1), 1–2. <a href="https://doi.org/10.1177/2056305115578681">https://doi.org/10.1177/2056305115578681</a>
+</div>
+<div id="ref-vandenabeeleDigitalWellbeingDynamic2021" class="csl-entry" role="listitem">
 Vanden Abeele, M. M. P. (2021). Digital wellbeing as a dynamic construct. <em>Communication Theory</em>, <em>31</em>(4), 932–955. <a href="https://doi.org/10.1093/ct/qtaa024">https://doi.org/10.1093/ct/qtaa024</a>
+</div>
+<div id="ref-vansteenkisteBasicPsychologicalNeeds2023" class="csl-entry" role="listitem">
+Vansteenkiste, M., Soenens, B., &amp; Ryan, R. M. (2023). Basic psychological needs theory: A conceptual and empirical review of key criteria. In R. M. Ryan (Ed.), <em>The <span>Oxford Handbook</span> of <span>Self-Determination Theory</span></em> (p. 0). <span>Oxford University Press</span>. <a href="https://doi.org/10.1093/oxfordhb/9780197600047.013.5">https://doi.org/10.1093/oxfordhb/9780197600047.013.5</a>
 </div>
 </div>
 </section>
@@ -717,7 +971,7 @@ Vanden Abeele, M. M. P. (2021). Digital wellbeing as a dynamic construct. <em>Co
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":false,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"width":"wide","preview-links":true,"controls":"auto","titleSelector":"h1, h2","hideMissingTitles":true},
+'menu': {"side":"left","useTextContentForMissingTitles":false,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"width":"wide","preview-links":true,"controls":"auto","titleSelector":"h1, h2","hideMissingTitles":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -959,9 +1213,23 @@ Vanden Abeele, M. M. P. (2021). Digital wellbeing as a dynamic construct. <em>Co
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);
       });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
       const clipboard = new window.ClipboardJS('.code-copy-button', {
-        target: function(trigger) {
-          return trigger.previousElementSibling;
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
         }
       });
       clipboard.on('success', function(e) {
@@ -1009,7 +1277,7 @@ Vanden Abeele, M. M. P. (2021). Digital wellbeing as a dynamic construct. <em>Co
           },
           interactive: true,
           interactiveBorder: 10,
-          theme: 'quarto-reveal',
+          theme: 'light-border',
           placement: 'bottom-start'
         };
           config['offset'] = [0,0];

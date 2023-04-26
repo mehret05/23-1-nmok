@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.475">
+<meta name="generator" content="quarto-1.3.340">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -18,7 +18,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -40,6 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,11 +70,16 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">What Constitutes Autonomy in Digital Communication?</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Course Information</a></li><li class="breadcrumb-item"><a href="./index.html">Overview</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -80,55 +87,61 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Course Information</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Course Information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">Overview</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://lms.uni-mainz.de" class="sidebar-item-text sidebar-link">Moodle</a>
+  <a href="https://lms.uni-mainz.de" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Moodle</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://www.mediapsychology.ifp.uni-mainz.de/felix-dietrich/" class="sidebar-item-text sidebar-link">Contact</a>
+  <a href="https://www.mediapsychology.ifp.uni-mainz.de/felix-dietrich/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Contact</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Materials</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./slides/slides.html" class="sidebar-item-text sidebar-link">Slides</a>
+  <a href="./slides/slides.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slides</span></a>
   </div>
 </li>
       </ul>
@@ -136,6 +149,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
@@ -154,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">What Constitutes Autonomy in Digital Communication?</h1>
+<h1 class="title">What Constitutes Autonomy in Digital Communication?</h1>
 <p class="subtitle lead">BA New Media / Online Communication KF/BF A: Spring Term 2023</p>
   <div class="quarto-categories">
     <div class="quarto-category">Media Psychology</div>
@@ -185,17 +199,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
 <p><strong>Note</strong>: Slides, exercises, and class preparation materials will be added and updated throughout the semester. Please check the course website regularly!</p>
 <div class="cell">
-
-</div>
-<div class="cell">
 <div class="cell-output-display">
 
-<div id="qfuosyvmql" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="jcsqdrxhxp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#qfuosyvmql .gt_table {
+#jcsqdrxhxp .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -220,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_heading {
+#jcsqdrxhxp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -232,12 +243,12 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_caption {
+#jcsqdrxhxp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qfuosyvmql .gt_title {
+#jcsqdrxhxp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -249,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#qfuosyvmql .gt_subtitle {
+#jcsqdrxhxp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -261,13 +272,13 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#qfuosyvmql .gt_bottom_border {
+#jcsqdrxhxp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_col_headings {
+#jcsqdrxhxp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -282,7 +293,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_col_heading {
+#jcsqdrxhxp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -302,7 +313,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qfuosyvmql .gt_column_spanner_outer {
+#jcsqdrxhxp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -314,15 +325,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#qfuosyvmql .gt_column_spanner_outer:first-child {
+#jcsqdrxhxp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qfuosyvmql .gt_column_spanner_outer:last-child {
+#jcsqdrxhxp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qfuosyvmql .gt_column_spanner {
+#jcsqdrxhxp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -334,7 +345,7 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#qfuosyvmql .gt_group_heading {
+#jcsqdrxhxp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -360,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#qfuosyvmql .gt_empty_group_heading {
+#jcsqdrxhxp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -375,15 +386,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#qfuosyvmql .gt_from_md > :first-child {
+#jcsqdrxhxp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qfuosyvmql .gt_from_md > :last-child {
+#jcsqdrxhxp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qfuosyvmql .gt_row {
+#jcsqdrxhxp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -402,7 +413,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#qfuosyvmql .gt_stub {
+#jcsqdrxhxp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -415,7 +426,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qfuosyvmql .gt_stub_row_group {
+#jcsqdrxhxp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -429,11 +440,11 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#qfuosyvmql .gt_row_group_first td {
+#jcsqdrxhxp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qfuosyvmql .gt_summary_row {
+#jcsqdrxhxp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -443,16 +454,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qfuosyvmql .gt_first_summary_row {
+#jcsqdrxhxp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_first_summary_row.thick {
+#jcsqdrxhxp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qfuosyvmql .gt_last_summary_row {
+#jcsqdrxhxp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -462,7 +473,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_grand_summary_row {
+#jcsqdrxhxp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -472,7 +483,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qfuosyvmql .gt_first_grand_summary_row {
+#jcsqdrxhxp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -482,11 +493,11 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_striped {
+#jcsqdrxhxp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qfuosyvmql .gt_table_body {
+#jcsqdrxhxp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -495,7 +506,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_footnotes {
+#jcsqdrxhxp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -509,7 +520,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_footnote {
+#jcsqdrxhxp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -518,7 +529,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qfuosyvmql .gt_sourcenotes {
+#jcsqdrxhxp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -532,7 +543,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#qfuosyvmql .gt_sourcenote {
+#jcsqdrxhxp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -540,199 +551,219 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#qfuosyvmql .gt_left {
+#jcsqdrxhxp .gt_left {
   text-align: left;
 }
 
-#qfuosyvmql .gt_center {
+#jcsqdrxhxp .gt_center {
   text-align: center;
 }
 
-#qfuosyvmql .gt_right {
+#jcsqdrxhxp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qfuosyvmql .gt_font_normal {
+#jcsqdrxhxp .gt_font_normal {
   font-weight: normal;
 }
 
-#qfuosyvmql .gt_font_bold {
+#jcsqdrxhxp .gt_font_bold {
   font-weight: bold;
 }
 
-#qfuosyvmql .gt_font_italic {
+#jcsqdrxhxp .gt_font_italic {
   font-style: italic;
 }
 
-#qfuosyvmql .gt_super {
+#jcsqdrxhxp .gt_super {
   font-size: 65%;
 }
 
-#qfuosyvmql .gt_footnote_marks {
+#jcsqdrxhxp .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-#qfuosyvmql .gt_asterisk {
+#jcsqdrxhxp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qfuosyvmql .gt_indent_1 {
+#jcsqdrxhxp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qfuosyvmql .gt_indent_2 {
+#jcsqdrxhxp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qfuosyvmql .gt_indent_3 {
+#jcsqdrxhxp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qfuosyvmql .gt_indent_4 {
+#jcsqdrxhxp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qfuosyvmql .gt_indent_5 {
+#jcsqdrxhxp .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" style="table-layout: fixed;">
-  <colgroup>
-    <col>
-    <col style="width:75px;">
-    <col>
-    <col>
-    <col>
-    <col>
-    <col>
-  </colgroup>
-  
-  <thead class="gt_col_headings">
-    <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="week">week</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="date">date</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="topic">topic</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="prepare">prepare</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="slides">slides</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="exercise">exercise</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="session type">session type</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="week" class="gt_row gt_center">1</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Apr 19</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Introduction &amp; Course Overview</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><a href="slides/slides.html#/session-01-introduction" target="_blank"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></a></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><a href="exercises/e01.html"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></a></td>
-<td headers="session type" class="gt_row gt_left">Lecture</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">2</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Apr 26</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">The Mobile Connectivity Paradox: Digital Wellbeing as a Dynamic Construct</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><a href="prep/p02.html"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></a></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Lecture &amp; Discussion</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">3</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">May 3</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Autonomy as a Basic Psychological Need: The Framework of Self-Determination Theory</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Lecture &amp; Discussion</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">4</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">May 10</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Structuring a Heterogeneous Field: The Basics of Markdown and GitHub</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Lecture &amp; Exercise</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">5</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">May 17</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Interactive Session</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">6</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">May 24</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Interactive Session</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">7</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">May 31</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">No Class</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">8</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Jun 7</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">No Class</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">9</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Jun 14</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Systematization: What Constitutes Autonomy in Digital Communication?</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Interactive Session</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">10</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Jun 21</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Systematization: What Constitutes Autonomy in Digital Communication?</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Interactive Session</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">11</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Jun 28</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Systematization: What Constitutes Autonomy in Digital Communication?</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Interactive Session</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">12</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Jul 5</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Synthesis: SDT-focused Perspectives on Digital Autonomy and Their Contribution to the Field</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Group Presentations</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">13</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Jul 12</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Synthesis: Other Perspectives on Digital Autonomy and Relation to SDT</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Group Presentations</td></tr>
-    <tr><td headers="week" class="gt_row gt_center">14</td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Jul 19</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Concluding Thoughts &amp; Evaluation</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left">Q &amp; A</td></tr>
-    <tr><td headers="week" class="gt_row gt_center"></td>
-<td headers="date" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Aug 31</td>
-<td headers="topic" class="gt_row gt_left" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;">Submission Deadline for Group Project Reports</td>
-<td headers="prepare" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"></path></svg></td>
-<td headers="slides" class="gt_row gt_center"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M128 96h384v256h64v-272c0-26.38-21.62-48-48-48h-416c-26.38 0-48 21.62-48 48V352h64V96zM624 383.1h-608c-8.75 0-16 7.25-16 16v16c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.2 632.8 383.1 624 383.1z"></path></svg></td>
-<td headers="exercise" class="gt_row gt_center" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836;"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;fill-opacity:0.1;position:relative;"><path d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368zM476.7 324.7L416 385.4L387.3 356.7C381.1 350.4 370.9 350.4 364.7 356.7C358.4 362.9 358.4 373.1 364.7 379.3L404.7 419.3C410.9 425.6 421.1 425.6 427.3 419.3L499.3 347.3C505.6 341.1 505.6 330.9 499.3 324.7C493.1 318.4 482.9 318.4 476.7 324.7H476.7z"></path></svg></td>
-<td headers="session type" class="gt_row gt_left"></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true">
+<thead class="gt_col_headings">
+<tr class="header">
+<th id="week" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">week</th>
+<th id="date" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">date</th>
+<th id="topic" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">topic</th>
+<th id="prepare" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">prepare</th>
+<th id="slides" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">slides</th>
+<th id="exercise" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">exercise</th>
+<th id="session type" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">session type</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_center" headers="week">1</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Apr 19</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Introduction &amp; Course Overview</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><a href="slides/slides.html#/session-01-introduction"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><a href="exercises/e01.html"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></a></td>
+<td class="gt_row gt_left" headers="session type">Lecture</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="week">2</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Apr 26</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">The Mobile Connectivity Paradox: Digital Wellbeing as a Dynamic Construct</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><a href="prep/p02.html"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td class="gt_row gt_center" headers="slides"><a href="slides/slides.html#/session-02-the-mobile-connectivity-paradox-digital-wellbeing-as-a-dynamic-construct"><i class="fa-solid fa-laptop" aria-label="laptop"></i></a></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Lecture &amp; Discussion</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="week">3</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">May 3</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Autonomy as a Basic Psychological Need: The Framework of Self-Determination Theory</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><a href="prep/p03.html"><i class="fa-solid fa-book" aria-label="book"></i></a></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Lecture &amp; Discussion</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="week">4</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">May 10</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Structuring a Heterogeneous Field: The Basics of Markdown and GitHub</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Lecture &amp; Exercise</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="week">5</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">May 17</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Interactive Session</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="week">6</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">May 24</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Interactive Session</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="week">7</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">May 31</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">No Class</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="week">8</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Jun 7</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Wiki Project: What Constitutes Autonomy in Digital Communication?</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">No Class</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="week">9</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Jun 14</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Systematization: What Constitutes Autonomy in Digital Communication?</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Interactive Session</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="week">10</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Jun 21</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Systematization: What Constitutes Autonomy in Digital Communication?</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Interactive Session</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="week">11</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Jun 28</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Systematization: What Constitutes Autonomy in Digital Communication?</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Interactive Session</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="week">12</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Jul 5</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Synthesis: SDT-focused Perspectives on Digital Autonomy and Their Contribution to the Field</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Group Presentations</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="week">13</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Jul 12</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Synthesis: Other Perspectives on Digital Autonomy and Relation to SDT</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Group Presentations</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="week">14</td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Jul 19</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Concluding Thoughts &amp; Evaluation</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type">Q &amp; A</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="week"></td>
+<td class="gt_row gt_left" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Aug 31</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836">Submission Deadline for Group Project Reports</td>
+<td class="gt_row gt_center" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-book" aria-label="book"></i></span></td>
+<td class="gt_row gt_center" headers="slides"><span style="opacity: 0.1;"><i class="fa-solid fa-laptop" aria-label="laptop"></i></span></td>
+<td class="gt_row gt_center" headers="exercise" style="border-right-width: 1px; border-right-style: solid; border-right-color: #3c3836"><span style="opacity: 0.1;"><i class="fa-solid fa-file-circle-check" aria-label="file-circle-check"></i></span></td>
+<td class="gt_row gt_left" headers="session type"></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -800,9 +831,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -867,6 +912,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
