@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://github.com/felixdidi/23-1-nmok/wiki/info.html</loc>
+    <lastmod>2023-05-10T11:11:46.242Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/felixdidi/23-1-nmok/wiki/topic_assignment/topic_assignment.html</loc>
+    <lastmod>2023-05-10T11:11:47.122Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/felixdidi/23-1-nmok/exercises/e04.html</loc>
+    <lastmod>2023-05-10T11:11:47.670Z</lastmod>
+  </url>
+  <url>
     <loc>https://github.com/felixdidi/23-1-nmok/exercises/e01.html</loc>
-    <lastmod>2023-05-03T20:14:28.191Z</lastmod>
+    <lastmod>2023-05-10T11:11:48.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/felixdidi/23-1-nmok/exercises/templates/exercise04.html</loc>
+    <lastmod>2023-05-10T11:11:48.434Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/felixdidi/23-1-nmok/slides/slides.html</loc>
-    <lastmod>2023-05-03T20:14:32.031Z</lastmod>
+    <lastmod>2023-05-10T11:11:50.190Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/felixdidi/23-1-nmok/index.html</loc>
-    <lastmod>2023-05-03T20:14:33.559Z</lastmod>
+    <lastmod>2023-05-10T11:11:51.674Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/felixdidi/23-1-nmok/prep/p04.html</loc>
-    <lastmod>2023-05-03T20:14:34.023Z</lastmod>
+    <lastmod>2023-05-10T11:11:52.106Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/felixdidi/23-1-nmok/prep/p02.html</loc>
-    <lastmod>2023-05-03T20:14:34.591Z</lastmod>
+    <lastmod>2023-05-10T11:11:52.666Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/felixdidi/23-1-nmok/prep/p03.html</loc>
-    <lastmod>2023-05-03T20:14:35.171Z</lastmod>
+    <lastmod>2023-05-10T11:11:53.238Z</lastmod>
   </url>
 </urlset>
