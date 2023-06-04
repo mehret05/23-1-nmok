@@ -1,7 +1,7 @@
 ---
 title: "Wiki Entry Template"
 subtitle: "BA New Media / Online Communication KF/BF A: Spring Term 2023"
-author: "Your Name"
+author: "Maren Ehret"
 categories:
   - "Media Psychology"
   - "Digital Media"
