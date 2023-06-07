@@ -1,0 +1,33 @@
+---
+title: "Wiki Entry Template"
+subtitle: "BA New Media / Online Communication KF/BF A: Spring Term 2023"
+author: "Maren Ehret"
+categories:
+  - "Media Psychology"
+  - "Digital Media"
+  - "Well Being"
+  - "Digital Healthcare"
+---
+
+Key Quote: "Autonomous, empowered individuals taking care proactively of their health are pictured as the creators of this vision for future 
+healthcare, and may at the same time redefne their role in relation to the traditional, expert-driven healthcare system." (Schmietow & Marckmann, 2019)
+
+Main Argument: The article by Schmietow and Marckmann is part of a larger project in the debate about ethical issues of digital healthcare and focuses 
+on the role of autonomy regarding new digital health applications. With the growing of various mobile health (mhealth) technologies, a lot of ethical questions as well as questions about the user/patient's autonomy continue to arise. Schmietow and Marckmann argue that mhealth strengthens and empowers
+their independancy in making decisions about their own health. They continue to explain how more autonomy and self-determination can benefit and support
+self-care and finally create a form of democratised medecine. However, they do highlight the imortance of digital and health literacy.
+
+Relationship: Unfortunatley this research area, espacially the role of autonomy in mheath, is still very vague. However Meskó et al. explain the importance
+of physicians charing knowledge and responsibility with patients (Meskó et al., 2017). Digital health is a team work because it involves patients more and allows them to participate in their own healthcare. The paper reflects the afore mentioned idea of democratised medecine.
+Another important work which relates to the chosen article is that about autonomy in self-determination theory by Arvanitis and Kalliris. It is a good base
+to understand the importance of the role of autonomy in digital healthcare as it gives a lot of theoratical and ethical background on autonomy and self-determination. (Arvanitis and Kalliris, 2023). 
+
+Questions:
+  1. Further research should explore if a full democratisation of healthcare is possible and whether it is a benefit to give patients that much autonomy.
+  2. How can the patient's understanding about risks, benefits and limitations of mhealth be ensured?
+ 
+Summary:
+In their article, Schmietow and Marckmann focus on the correlation between digital healthcare (mhealth) and autonomy. Mhealth is the growing use of technological devices such as smartphones for healthcare purposes. Some applications are already on the market and as individuals become increasingly interested in the idea of monitoring their health and making their own decisions about it, many questions concerning ethics and the role of autonomy arise. The authors state that using digital media as a way of healthcare increases digital autonomy as the user/patients become more independent and actively take part in the “traditional, expert-driven healthcare system” (Schmietow & Marckmann, 2019). Through communication with physicians and other patients, they get empowered and encouraged in their decision-making.
+However Schmietow and Marckmann emphasize the issues concerning digital health. They point out that people may not possess enough health-related knowledge to reasonably use digital health technologies and make the right decisions. Indeed promoting and respecting the patient autonomy is difficult as the individuals will have to be well informed about all information and give consent to share private information. Transparency is a key part in mhealth and the related digital autonomy.
+To connect mhealth use and autonomy need experiences, a theoretical mechanism is not directly mentioned. Nonetheless, Schmietow and Marckmann highlight the fact, that getting more autonomy in the own health-decisions results in more self-control and self-determination which are part of the IM3UNE-model by Schneider et al. This assumes that positive effects of the SOC facets lead to a satisfaction of needs and therefore well-being, the main goal of digital healthcare.
+As the research in this area is still ongoing and with the article being part of an ongoing empirically informed ethical research project, it is not yet clear how exactly the relationship between digital autonomy and digital healthcare is studied empirically.
