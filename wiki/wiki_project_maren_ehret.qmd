@@ -7,6 +7,7 @@ categories:
   - "Digital Media"
   - "Well Being"
   - "Digital Healthcare"
+  - Paper: Schmietow, B. & Marckmann, G. (2019). Mobile health ethics and the expanding role of autonomy. Medicine, health care, and philosophy, 22(4),               623–630. 
 ---
 
 Key Quote: "Autonomous, empowered individuals taking care proactively of their health are pictured as the creators of this vision for future 
